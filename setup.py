@@ -8,6 +8,7 @@ except (ImportError, AttributeError):
 from setuptools import setup, find_packages
 import os
 
+
 def setup_package():
     package_name = 'spacy_lefff'
     root = Path(__file__).parent.resolve()
@@ -31,7 +32,7 @@ def setup_package():
         package_data={'spacy_lefff': ['data/*']},
         tests_require=['pytest', 'pytest-cov'],
         install_requires=[
-            'spacy>=3.0.0,<3.0.5'],
+            'spacy>=3.0.0,<3.1.0'],
         zip_safe=False,
         classifiers=[
             'Programming Language :: Python',
